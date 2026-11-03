@@ -1,0 +1,7 @@
+# Optional separate Windows Python 3.12 CPU process; GUI dependencies unchanged.
+# Install torch/torchvision from https://download.pytorch.org/whl/cpu
+torch==2.14.1+cpu
+torchvision==0.29.1+cpu
+numpy==2.5.3
+opencv-python-headless==4.14.0.94
+pillow==12.3.0

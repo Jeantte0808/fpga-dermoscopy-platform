@@ -1,0 +1,41 @@
+# Credentials and local state
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*transaction_highwater*
+*credential*
+outputs/
+captures/
+experiments/
+records/
+# Runtime and generated build products
+__pycache__/
+*.pyc
+.venv/
+venv/
+build/
+dist/
+.Xil/
+*.runs/
+*.cache/
+*.sim/
+*.bit
+*.mcs
+*.dcp
+*.exe
+*.dll
+*.log
+*.jou
+# External model and data assets
+*.pt
+*.pth
+*.onnx
+*.npz
+*.npy
+*.raw
+*.rgb
+*.mem
+datasets/
+weights/

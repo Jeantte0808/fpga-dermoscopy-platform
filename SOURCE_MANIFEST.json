@@ -1,0 +1,1186 @@
+{
+  "pc_version": "0.16.1-rc.1 reconstructed from v0.14 + official patches",
+  "hardware_source": "P7 Vivado delivery snapshot",
+  "copied_files": [
+    {
+      "path": "hardware/rtl/formal_ethernet_session.v",
+      "sha256": "724be3c54fff034a344dc31bbb61a8a69ae9032e863d5b53817c4a160611c863"
+    },
+    {
+      "path": "hardware/shared/axi_tile_dma_guarded.v",
+      "sha256": "fa472949c55fcaac83797f0e733d11433613551dfb5707fe1ea5bec5d3625015"
+    },
+    {
+      "path": "hardware/shared/channel_window.v",
+      "sha256": "363e4f898060675872acf5b8a5ed310d3dc49c93e572b9d3563ac48d81fcb3e3"
+    },
+    {
+      "path": "hardware/shared/conv_pipeline.v",
+      "sha256": "1fd6b2a80a17cc59610219abb800099dc14803c0eb725d795304a9ed9bce359d"
+    },
+    {
+      "path": "hardware/shared/crc32_d8.v",
+      "sha256": "c2bd0b5af84a7623ede3b67420e5435f2776987ff94f149b67f60a30e666b307"
+    },
+    {
+      "path": "hardware/shared/dw_layer.v",
+      "sha256": "24cbb251bcb5f3b4243666f96144f360a2ca95161bdf78ffae8d5112815c1881"
+    },
+    {
+      "path": "hardware/shared/dw_window.v",
+      "sha256": "02469d4ee6023b3490bb4badc9cbc91de2b4c4ae9cd02965b327b9ca9c128ec8"
+    },
+    {
+      "path": "hardware/shared/eth_udp_rx_gmii.v",
+      "sha256": "0624a2e81a4f2b08c227e322d76344fc0c509846cbc76daf582d86a25a64cd69"
+    },
+    {
+      "path": "hardware/shared/eth_udp_tx_gmii.v",
+      "sha256": "378b27028b7c2815008f3a13cfb6fcfb6e944c4cdc3b7a14b0d93e5162dddcc9"
+    },
+    {
+      "path": "hardware/shared/formal_buffer_crc.v",
+      "sha256": "6d7bb1403413e8b4664ad2330702bbfaf5d8b3a12b641347ef711fb191f9f5a4"
+    },
+    {
+      "path": "hardware/shared/formal_command_rx.v",
+      "sha256": "d15381738cd512494a59ff48fe838eb2b57886c163d4cdac5a9014c0e8d38423"
+    },
+    {
+      "path": "hardware/shared/formal_conv_ddr.v",
+      "sha256": "222ca585eddf7c8b9c19339e35684ff76195364f4c63847fa568d8929ab7bfbb"
+    },
+    {
+      "path": "hardware/shared/formal_decode_legacy.v",
+      "sha256": "bd2ac4e979ad364efeeaf20259852e4d8e33ba256d33ff55f47987274b515eb8"
+    },
+    {
+      "path": "hardware/shared/formal_decode_ops.v",
+      "sha256": "a0adadb3e74e0628641b1a10cea1ebe85a1cdfff8f5289c22fd8943c3448ed7a"
+    },
+    {
+      "path": "hardware/shared/formal_dw_ddr_layer.v",
+      "sha256": "87e279b6c65185167c33c98c6d0927dc9d7e0af5a4f1e404cfbf50c7ec3be392"
+    },
+    {
+      "path": "hardware/shared/formal_frame_io.v",
+      "sha256": "b6c90d9492eeff9b746b425ecb6060e43b7607c0ffb539eacd7f4237c5ac4d2a"
+    },
+    {
+      "path": "hardware/shared/formal_graph_control.v",
+      "sha256": "1783ecb466d37787b4bec32ae9f3f2012bb49b5214abe13b9c61258e7e332dcd"
+    },
+    {
+      "path": "hardware/shared/formal_graph_engine.v",
+      "sha256": "ba2b83c34f27a97b6cf43442f07a7a7f1ef369aee76181a1289efe780bba75d4"
+    },
+    {
+      "path": "hardware/shared/formal_image_session.v",
+      "sha256": "39668856ff5c2be2d87d544e90d99442885d04237404ea92b970491feeaa5b49"
+    },
+    {
+      "path": "hardware/shared/formal_inference_manager.v",
+      "sha256": "4ecb9d803215e4474cffe1d7a882fd0aeb015663966a85420b4d6421665b9046"
+    },
+    {
+      "path": "hardware/shared/formal_inference_session.v",
+      "sha256": "7d252785bfe7058ba29c4cdbc5e3335233042f1c8c1718fe58b67ed536d46990"
+    },
+    {
+      "path": "hardware/shared/formal_joint_ddr_layer.v",
+      "sha256": "f9ac426531c3c8067c325624826b4f3c1acff87b2e8084a10f10510e8c8c513f"
+    },
+    {
+      "path": "hardware/shared/formal_mask_ddr.v",
+      "sha256": "f99e49dd9a5e2c8662a75dc76fc6488a9e1c0c15319e4bd279b0996830851fff"
+    },
+    {
+      "path": "hardware/shared/formal_mask_pack.v",
+      "sha256": "f1e819d9e16a967fcd5909a6ff7cdb093d9e64ffa2512560787ffcd459ce1205"
+    },
+    {
+      "path": "hardware/shared/formal_mask_packet_reader.v",
+      "sha256": "af6268dfd72ba49616d2e804c53012130e94007885854fb1f9f3f8184fced231"
+    },
+    {
+      "path": "hardware/shared/formal_model_preflight.v",
+      "sha256": "0ba07db9ebd7d929b25a1bed36137fcc6918278eddea5cb2da71afab50ad8fa4"
+    },
+    {
+      "path": "hardware/shared/formal_network_session.v",
+      "sha256": "fc796bc072d357cb5b2bc4ed0ba185410dad1463319002a550bab7e83d149efc"
+    },
+    {
+      "path": "hardware/shared/formal_parameter_ingress.v",
+      "sha256": "de1eeafb1084a74adf3fa40b7f9046fdf377f938d08720af2296d58f2cf80010"
+    },
+    {
+      "path": "hardware/shared/formal_perf_counters.v",
+      "sha256": "fb3cd7c3d2e5ad287119ce390c6fb578293251c77458ea51ab1ef3400ece4810"
+    },
+    {
+      "path": "hardware/shared/formal_quant_banked.v",
+      "sha256": "d0e6058b6d30f6df7ac1397f36d753c42decced551d39a529d8c8867de6f822a"
+    },
+    {
+      "path": "hardware/shared/formal_quant_loader.v",
+      "sha256": "0e161d12a6466e0d17c6496d8c423681de6e2b941a1235f50d38e63bb3863e2c"
+    },
+    {
+      "path": "hardware/shared/formal_reply_packet.v",
+      "sha256": "11ec9c8679a2015c52bdd49c0dbdb96e8d0a708161dec3b7c8f7e7a7c472949d"
+    },
+    {
+      "path": "hardware/shared/formal_residual_ddr.v",
+      "sha256": "cf81dc2ce270a2b70906694143d139f744b2cda5f6ab398cce182b81f156282e"
+    },
+    {
+      "path": "hardware/shared/formal_rgb_ddr.v",
+      "sha256": "49fd9857f22b9244aafd9b2fde491c6d8af226081e41575db3c8058036272a4b"
+    },
+    {
+      "path": "hardware/shared/formal_rgb_lut.v",
+      "sha256": "879a8e0e99a1533935d34ec0781b69da8aa08b6cf260c9bd45001b887be03336"
+    },
+    {
+      "path": "hardware/shared/formal_rx_commit.v",
+      "sha256": "5c0f5a95f731c5d6f474350b8a4578d83c19dd1bed9edb75d70b695d756859bd"
+    },
+    {
+      "path": "hardware/shared/formal_tx_bytes.v",
+      "sha256": "c4c457ff9313fb219c63cea1818adb562b784c747b14c08f9dfd8bdca936ca1b"
+    },
+    {
+      "path": "hardware/shared/formal_tx_packet_store.v",
+      "sha256": "24bbb16e7b279fb734216531d664eb46a1726f67e7af48dafe2b5c3f9cd3662a"
+    },
+    {
+      "path": "hardware/shared/formal_udp_gateway.v",
+      "sha256": "9eb6b43fe83f5d477835f4d471a8de3250bc6986aedde092a9f3788c0a62aa7e"
+    },
+    {
+      "path": "hardware/shared/formal_upload_session.v",
+      "sha256": "b88161fcfe0cb88fdfc35c21bd6bf94bad0b540559c1108edf9a0632f18c3fa3"
+    },
+    {
+      "path": "hardware/shared/gmii_to_rgmii.v",
+      "sha256": "9d57394703bfbcfc1de6aefc01d573a0a562abe58f712a46f19fbd6f693dadd7"
+    },
+    {
+      "path": "hardware/shared/int8_dw16.v",
+      "sha256": "7cc94c596918ca73152ecb7b37ee5c22990c1f52644dfb9eb93227c7ad2b0db8"
+    },
+    {
+      "path": "hardware/shared/int8_mac8x16.v",
+      "sha256": "9b3b75442858d3625f8bf56c35a43abb6beb3a2844e6d4738e714da4c80b5f22"
+    },
+    {
+      "path": "hardware/shared/ip_checksum.v",
+      "sha256": "2ede55244bc4d2d8c6e4195b39c26d71fc155858c2a0382717b1b4060d360710"
+    },
+    {
+      "path": "hardware/shared/joint_layer.v",
+      "sha256": "94d5f6f973a87e4e07c165d35bd1972c306aa5dcf817feb36f4b7a8879992815"
+    },
+    {
+      "path": "hardware/shared/nearest_burst.v",
+      "sha256": "53eba22f26f7b74488d8e1bbad664adf1c448224893adc528e59647135554c9e"
+    },
+    {
+      "path": "hardware/shared/parameter_chunk_loader.v",
+      "sha256": "8d56a2e1b90ed021be1383919382dc5b7e60a4d1276e575c45a5ff40a180e294"
+    },
+    {
+      "path": "hardware/shared/psum_vector8.v",
+      "sha256": "0f74f1a2a6d6affec1e2d5f5d263269c0c69fbd4dce90f0e7b465cbf1ae016d8"
+    },
+    {
+      "path": "hardware/shared/requant_lane_pipe.v",
+      "sha256": "ba49fb08244488eb7439d51539ad13e54a03fcc4ed83d37d3cf4a699ccd59170"
+    },
+    {
+      "path": "hardware/shared/requant_vector16.v",
+      "sha256": "3c6788fe95d7f19df2a6ec9c6360850f6eeeedc3dba54962fe4ff03740a66fb7"
+    },
+    {
+      "path": "hardware/shared/rgmii_to_gmii.v",
+      "sha256": "ce7be0a1a133f2232641631d99cb59cc5b3b6a09020c39014fd9b9bc9c5c18e2"
+    },
+    {
+      "path": "hardware/shared/validated_packet_cdc.v",
+      "sha256": "8bf1567d810352965f72f431fff074df232985dfdbfba78adb158ebc7b90766e"
+    },
+    {
+      "path": "hardware/board/after_opt.tcl",
+      "sha256": "ca984a8783d7baf462d55f402cabac3e513cfe3626b73dd144211d604c51149e"
+    },
+    {
+      "path": "hardware/board/after_opt_v2.tcl",
+      "sha256": "7a1056c2411bb1a229505e0237a16f36047f9ee00b6076bb41b055ad00b4cd5a"
+    },
+    {
+      "path": "hardware/board/after_route.tcl",
+      "sha256": "f2b342b65f52d8aca6b0c8084037fe76fa63d757779e69809af1f95d06be1e3d"
+    },
+    {
+      "path": "hardware/board/formal_ethernet_board_session.v",
+      "sha256": "ea54466c8507ed0f57f9ca2951df7c29913ebd17b25a7a70ca04c52dcaf94d21"
+    },
+    {
+      "path": "hardware/board/formal_ethernet_top.v",
+      "sha256": "e7362a8662c82e80be43a8833cbb9a405267631b2adab1aa994adf2d8d71259d"
+    },
+    {
+      "path": "hardware/board/io.xdc",
+      "sha256": "e09564295d695780aedffb2c259259eaa2ea55695aeb66a0519e9a58dc0d7872"
+    },
+    {
+      "path": "hardware/board/mig_200t.prj",
+      "sha256": "2a3c9ad8aef038472354648d5af7a2f2f56b645d5af9527dbcbac8795b6b4092"
+    },
+    {
+      "path": "hardware/board/refine_internal.tcl",
+      "sha256": "0859f340cdeba6e82a61b43b9b437134e74c8960d760a1ee6a66cd66edd29d82"
+    },
+    {
+      "path": "hardware/board/refine_io_placement.tcl",
+      "sha256": "3514da9db35b8b1fcec2aa37ad11662df3db8cf9d75ee010cf6262fc09cf44d9"
+    },
+    {
+      "path": "hardware/generated/board_config.vh",
+      "sha256": "c04e5059ef235c836afc996ca060a401d635e0277ed98a112e9bbfce0e08ac70"
+    },
+    {
+      "path": "hardware/generated/core_instance.vh",
+      "sha256": "11aaffdab05854d3389d8c6e710b8a8f92d5bc07b404340f5c6c2a1d28ce00a3"
+    },
+    {
+      "path": "hardware/generated/core_wires.vh",
+      "sha256": "22297345271cf3bd5731b0a1a37b7c244ad8a9157533371d209d64bf2d659e02"
+    },
+    {
+      "path": "software/dermademo/acceptance.py",
+      "sha256": "ec80da7a1f11ddef35e14b6299b7403806546cc60d2df906538e07377902bd34"
+    },
+    {
+      "path": "software/dermademo/ai_content_policy.py",
+      "sha256": "dd7a44d0fcbc345a8672af79d674f68295cd414705a0ac5577a13d908db3e9a7"
+    },
+    {
+      "path": "software/dermademo/ai_diagnostics.py",
+      "sha256": "3cbf337042532f89153d42a89a54db69f6525939ee6501a7438b41ead0c78909"
+    },
+    {
+      "path": "software/dermademo/ai_protocol.py",
+      "sha256": "b36f3a035c99e742ebdb561b9204993de1e7cd365cb0f22c89d083446ef7f1a6"
+    },
+    {
+      "path": "software/dermademo/ai_recover_cli.py",
+      "sha256": "b14d0c62636bdcbbb8594473ad7d8d7aec9d1661e236ed8c00a7eb53fc6f48e1"
+    },
+    {
+      "path": "software/dermademo/ai_report_display.py",
+      "sha256": "4a03d3e9526ecb5ea654c884489c0cb8dc6f8a26c88b2952aa5b04c6307af177"
+    },
+    {
+      "path": "software/dermademo/ai_service.py",
+      "sha256": "661ca3681c16674fc8dcac99ad8efee9edde4810ee575c1c18cc1b3562322125"
+    },
+    {
+      "path": "software/dermademo/ai_transport.py",
+      "sha256": "f5c5037d792174aaf6175fc0d5b6b59cf72553c04c9cfb6a469b174817738651"
+    },
+    {
+      "path": "software/dermademo/ai_ui.py",
+      "sha256": "d4f18aa35b2b79e4b498ee4a45cd1d506c5d1387623550047444fba11d7eecb9"
+    },
+    {
+      "path": "software/dermademo/analysis_identity.py",
+      "sha256": "0b6d7b58162b9132677eebd56743c938127b2f1bc26278e71be8f4750960a018"
+    },
+    {
+      "path": "software/dermademo/analysis_snapshot.py",
+      "sha256": "816c6d6d18c7d6c52b00482d2797ddfaf612ad0da9891cd96a96519f1eae16bd"
+    },
+    {
+      "path": "software/dermademo/analysis_ui.py",
+      "sha256": "0c56338302a1e00798eac7b32059dfb5fea2f0aff56223b394cb5ff5974ca66a"
+    },
+    {
+      "path": "software/dermademo/backends.py",
+      "sha256": "88dec03ccd68b3a22f6d982154433cfd38e0b80abfbd7b3801e1ec78f15f1094"
+    },
+    {
+      "path": "software/dermademo/batch.py",
+      "sha256": "d933733e09710e3a2ee02b605760d1cd8356b54511828db6f3747b04b598e792"
+    },
+    {
+      "path": "software/dermademo/batch_pdf.py",
+      "sha256": "8824176dac87b0bab3e24c10439def49b10d8268257c1069236747027f3ea664"
+    },
+    {
+      "path": "software/dermademo/bootstrap.py",
+      "sha256": "b7294bf63ea9cd4cb059e690f9a1b4be8ab34009977f527027438e0d5fb7d766"
+    },
+    {
+      "path": "software/dermademo/classification.py",
+      "sha256": "13f1ff08e5b386e310a1f96830be0f9114310be7729c10ecb2e5081cde362bf6"
+    },
+    {
+      "path": "software/dermademo/classification_pdf.py",
+      "sha256": "6d4d1dfab728dc3eac405068e916c2d48b79a324a8fcf809aa1703b0f835d7ab"
+    },
+    {
+      "path": "software/dermademo/classification_ui.py",
+      "sha256": "f3415dff3b5117d18b4445adefe1b3c55748ade8b3487c3c0f5eeae3b07d6d76"
+    },
+    {
+      "path": "software/dermademo/classifier_worker.py",
+      "sha256": "278c8b81a11b7b760fc9ef8b1af17a482395e0c83624efc4bacbae6b684289ac"
+    },
+    {
+      "path": "software/dermademo/configuration.py",
+      "sha256": "867e00b85e19fd1a19465212a5d19d56a9071455b22c8ba567901850e409d551"
+    },
+    {
+      "path": "software/dermademo/contracts.py",
+      "sha256": "12190a04843253a55e1b566f260594fe60d2b4aea17efd992ac32c9072761a5e"
+    },
+    {
+      "path": "software/dermademo/cpu_baseline.py",
+      "sha256": "9c361364d7d8e403b7c24eff0f0b39841f11ae2e9333a8096007c7ac9fcbb424"
+    },
+    {
+      "path": "software/dermademo/cpu_cli.py",
+      "sha256": "4881b41c64155b5e61f85c3786bb63e4acb5f1dc477bf64b808c6902800c97da"
+    },
+    {
+      "path": "software/dermademo/cpu_runtime.py",
+      "sha256": "c26291cb2106b77d2d91dc1c13ceb78bfcbdb288724bee1a1e1facbc6895d2c8"
+    },
+    {
+      "path": "software/dermademo/cpu_runtime_ui.py",
+      "sha256": "7577ca0843718732fca3dbac313e3e69879756ff604afd177f415f8bb596d217"
+    },
+    {
+      "path": "software/dermademo/cpu_ui.py",
+      "sha256": "e63297727e107c6020f0cf956e861b53d781d8b8fa4e924ad9031c6369040582"
+    },
+    {
+      "path": "software/dermademo/cpu_worker.py",
+      "sha256": "8fcdcfd16fd91b2d436286b51fb621af164fc8401797734c6a488220516b2c61"
+    },
+    {
+      "path": "software/dermademo/credentials.py",
+      "sha256": "99f559ca9120f1b626f8dc5ed112e59a63b35c51caadc3eac4d50bae2e40310e"
+    },
+    {
+      "path": "software/dermademo/device_ui.py",
+      "sha256": "2dafa62e8aa5d2150ebbd6e62d45c7b42488355c58b6589b3c05aaba1d89d325"
+    },
+    {
+      "path": "software/dermademo/diagnostics_view.py",
+      "sha256": "5547387245e88234fa9760c703ecb06a838455ea3d662619c6796ddebf1876ed"
+    },
+    {
+      "path": "software/dermademo/diagnostic_bundle.py",
+      "sha256": "b8b134ff4963895b51e8239a82889c34ea7d05d416386d24402d79157c5718eb"
+    },
+    {
+      "path": "software/dermademo/diagnostic_logging.py",
+      "sha256": "50e8e852d19bc8373a673b55a845a7039b8246b3b5b8f5f6b68edf3aa996c66c"
+    },
+    {
+      "path": "software/dermademo/formal_device_ui.py",
+      "sha256": "580ee4966d037c9efb4a4e8401daac6d1dced68e4f6c769c750c1e49b81db31b"
+    },
+    {
+      "path": "software/dermademo/formal_input.py",
+      "sha256": "08ef50bda22c90afc3050967c381be9a1092fb10d5e31667247cfd9ca90ee45c"
+    },
+    {
+      "path": "software/dermademo/formal_preprocessing.py",
+      "sha256": "06c2daa325a8aac0eb88e887c94b66bb44abf6419c9a166b629a3583c462e792"
+    },
+    {
+      "path": "software/dermademo/formal_queue.py",
+      "sha256": "3c2b095ba47d19dfa025f4558aa54aa769e1c3b0a5f1cc192a27cda54835c165"
+    },
+    {
+      "path": "software/dermademo/formal_queue_ui.py",
+      "sha256": "6da8455cbf66cf079dc9adeb0b12eecd893f01859c337034a56b75e5060aef32"
+    },
+    {
+      "path": "software/dermademo/formal_results.py",
+      "sha256": "54ab4d04604245dc5dcc7f7d6de39c33a02b3f5d0b6747f5a8680a6930ad7f8b"
+    },
+    {
+      "path": "software/dermademo/gui.py",
+      "sha256": "926412c6a99073ddef396aaaaa7d8258a1ffa4c02482a99ca2fcd25480e9e31c"
+    },
+    {
+      "path": "software/dermademo/hardware.py",
+      "sha256": "5af379fcbcc21c3ed754d248c448a2b1da20a263fdeddb8f8cf2850503f74502"
+    },
+    {
+      "path": "software/dermademo/hardware_lab.py",
+      "sha256": "a1db9f2f4cfc9c17abb9606f5f96a6e0f7c2d01ba95f5090f8ac09661e49dc1b"
+    },
+    {
+      "path": "software/dermademo/hardware_lab_cli.py",
+      "sha256": "b7ceeec60000b8b251b82633cd73cb2cc8fac68a006b6fb1abc18dc32c0245a7"
+    },
+    {
+      "path": "software/dermademo/hardware_lab_pdf.py",
+      "sha256": "7469f5b3f2b3f1b1caf581491202a3eeb0567eeaf16662d0f321e12ec9753d5a"
+    },
+    {
+      "path": "software/dermademo/hardware_lab_ui.py",
+      "sha256": "326f6464bdf480534240cf6bd3c438aae79d36c21c47ca25188335f12ff05835"
+    },
+    {
+      "path": "software/dermademo/imaging.py",
+      "sha256": "351377b54980ab00ec8a9543d0473d107644bdeae69c853a3c2b5c2508fba715"
+    },
+    {
+      "path": "software/dermademo/isic2016.py",
+      "sha256": "1522d2de7aa7c84e9a98fa67d469f3ff31ff105d2d9c8ed87b95768886bd21dd"
+    },
+    {
+      "path": "software/dermademo/linked_views.py",
+      "sha256": "361e4662561b038034fdc9e2d3e406f3a5377a14f5e35b46820c795f6d4e2479"
+    },
+    {
+      "path": "software/dermademo/mask_statistics.py",
+      "sha256": "1d96ec46b130c7c29c4b44644f3843e0d5f50c543d30bc3a4476b6328c0ae132"
+    },
+    {
+      "path": "software/dermademo/morphology.py",
+      "sha256": "836378f0ccf239698d14a0029b557767cac4666539d36ad448f0c9ed5acb6f17"
+    },
+    {
+      "path": "software/dermademo/overlay_view.py",
+      "sha256": "4a3f276ac3c2ae85eccfefaa0ac4de66fd71e62a76f8fb3eaecba76721c202fe"
+    },
+    {
+      "path": "software/dermademo/pdf_layout.py",
+      "sha256": "279d2c1314d24e2cc88a4826b672aaaaddd0fb38f7c082b79c713cc207517712"
+    },
+    {
+      "path": "software/dermademo/performance.py",
+      "sha256": "362a12bcb55243b1aac0debeee88081f53bf45ef18daa3cc035dcff077748105"
+    },
+    {
+      "path": "software/dermademo/preferences.py",
+      "sha256": "bc40296a605bf8bee1cdf2dd4bb665448bde4e0d8522bbfb8146cdfe31956058"
+    },
+    {
+      "path": "software/dermademo/records.py",
+      "sha256": "9427fa200849ce790efaf150b8b32217c90e9ebbf7b615419f5aa214b204191b"
+    },
+    {
+      "path": "software/dermademo/reference_library.py",
+      "sha256": "8ff04c7ca4d78af04e701ec4ae469bc48bc28742ed9316d6a657889f2ac31e18"
+    },
+    {
+      "path": "software/dermademo/registry.py",
+      "sha256": "ec573a3cbb7c5eef4a2d3435afd2bf7c4c5fa18a2405f60fe8ec6f1a122ca4e2"
+    },
+    {
+      "path": "software/dermademo/release_smoke.py",
+      "sha256": "03fef70f9176ef9f7f865085288c9e44c2bdbea5744086124e5e9a951b0df570"
+    },
+    {
+      "path": "software/dermademo/report_ui.py",
+      "sha256": "0eac94f38b8037b9da8a2c5df31e123d1002f00704b7f536af8b4a2e1511e0a3"
+    },
+    {
+      "path": "software/dermademo/resources.py",
+      "sha256": "5e3f95a178469eb89032fd93e5d5fb052b713b8b4a5badbf236b1cf3123b4f9b"
+    },
+    {
+      "path": "software/dermademo/review.py",
+      "sha256": "e25eb2e93aa146f6a048a029c5f932e98561e301ad19ed4d936dca87a2e6e89b"
+    },
+    {
+      "path": "software/dermademo/review_cli.py",
+      "sha256": "f0b1100bf6df2894b0b26a7a6a1ebe24c0322d5e1cfc3a68ba14b0ed336173ba"
+    },
+    {
+      "path": "software/dermademo/review_pdf.py",
+      "sha256": "cb996954641b389f16af570d8ab3dbe5131cac5d3fab864e1c5c0ff8a4e8ab77"
+    },
+    {
+      "path": "software/dermademo/review_ui.py",
+      "sha256": "43da76da56f42e0396e39261d98af41602daf42b8b16827f63a16396fad0f3c8"
+    },
+    {
+      "path": "software/dermademo/rgb_device_ui.py",
+      "sha256": "7983f83228a74d2436799be6c791987f1f073738ee64285adb22a11635f67a7d"
+    },
+    {
+      "path": "software/dermademo/roi.py",
+      "sha256": "32116613ce537179f05bdc14b5c8de7fc1e68ccbfff3a9a62f3b3ee09ba33899"
+    },
+    {
+      "path": "software/dermademo/roi_chain.py",
+      "sha256": "b92476432e9b25fc14e192ea7f859f08f143375ff26d4052f0f2dc053e3e2e5d"
+    },
+    {
+      "path": "software/dermademo/roi_edge.py",
+      "sha256": "2b34f3e5435aed9930706e8d624ef47b73b8223b0f8c26234a5ac56f3effd566"
+    },
+    {
+      "path": "software/dermademo/roi_edge_contact.py",
+      "sha256": "6955f8c293e88ee682aafa95379640671a962e9f37a0e95be5f52146ef6509b5"
+    },
+    {
+      "path": "software/dermademo/roi_expansion.py",
+      "sha256": "e045a73a4b9a10b3d7a574a06b8b2c2d930a776e0a55defd8d68efc4f2d2398c"
+    },
+    {
+      "path": "software/dermademo/roi_preprocessing.py",
+      "sha256": "5a8cfbdfcfd48f6c818e1d4183bec705d0aab091981efcf17f56630a3338623b"
+    },
+    {
+      "path": "software/dermademo/roi_selector.py",
+      "sha256": "0dd450b0b1631667fa3dac889f2120285aa2df4851df4bbf6f742a1731dac782"
+    },
+    {
+      "path": "software/dermademo/roi_ui.py",
+      "sha256": "65868451c26b7cac8a3b0fde607d5025a3c42bbdbfa0fb032f2bff471d676899"
+    },
+    {
+      "path": "software/dermademo/runtime_paths.py",
+      "sha256": "8ddcdd758feb7da8a62264aa9314f85ff4e1f733a79ef2b7ec3dd1bf6647555b"
+    },
+    {
+      "path": "software/dermademo/storage.py",
+      "sha256": "d7c9c9071febc5cb9a709987b75976b4835e25d9b04b0493b9551dc0f082b2a7"
+    },
+    {
+      "path": "software/dermademo/theme.py",
+      "sha256": "460a64fc90b04060539ea45709b52819757930e275bfac5557866a6861704aac"
+    },
+    {
+      "path": "software/dermademo/timing_view.py",
+      "sha256": "faa7c48e1842652f538f4f9694b3cd3df0fe3cea81fac384e378f6b9c696454c"
+    },
+    {
+      "path": "software/dermademo/tools_cli.py",
+      "sha256": "f993115e797d60559078cd60731829ccdc452187a8d0765d028d23585553d8c9"
+    },
+    {
+      "path": "software/dermademo/unified_report.py",
+      "sha256": "b0f46ac77fa7e82b84cc4afda055e4c2fd5844ab5171fec4304665f83230628c"
+    },
+    {
+      "path": "software/dermademo/validation.py",
+      "sha256": "c82da242545f322a93e7f981b1e6d9f1e778e11fd187abe602d141ec6e0eec8b"
+    },
+    {
+      "path": "software/dermademo/validation_ui.py",
+      "sha256": "da685262843f051b6497b4b54d08d2953c0d7b41b9dd4651d97d1f7cd2206965"
+    },
+    {
+      "path": "software/dermademo/__init__.py",
+      "sha256": "aa503b8a3c5c5e8ab63c7d1b6ab54ce971e1846d02f8c2de62772350f0c38bb5"
+    },
+    {
+      "path": "software/dermademo/__main__.py",
+      "sha256": "5ed91e2241899172d3258897e6f639aa5f687759ea05973c6e24e67f0dddfb2b"
+    },
+    {
+      "path": "software/dermademo/device/assembly.py",
+      "sha256": "0fd311b85aaf89da1b271185a065c37cd0f1d18f873f4aa7929e6a37a717b9a4"
+    },
+    {
+      "path": "software/dermademo/device/codec.py",
+      "sha256": "e8f5152af4b9e67fc1af93275a21e65879f65ff5068ed099532f9e34862b4076"
+    },
+    {
+      "path": "software/dermademo/device/diagnostics.py",
+      "sha256": "9fd395ffd7ea886a43488dbb6e8295def81fc9f52a03279e932dad927c43f9b6"
+    },
+    {
+      "path": "software/dermademo/device/formal_capture.py",
+      "sha256": "ebf400286a955f364c4a1edaf58ab22de7f5dcefc513ffd9222a8c80a73ebc8a"
+    },
+    {
+      "path": "software/dermademo/device/formal_cli.py",
+      "sha256": "67fe2c5a93ebd03e067f2c4094988ad6109141e40c8d3464e88fdf71396ed630"
+    },
+    {
+      "path": "software/dermademo/device/formal_protocol.py",
+      "sha256": "0562e26eb66fee4ac901d3e2086b00efee9aa5c74ee835eade4b11d6cc7fab28"
+    },
+    {
+      "path": "software/dermademo/device/formal_session.py",
+      "sha256": "f8bac9d88d128aa3ee8f3ad9101e98d83229e514e72467f6d1e4b19ea401b03d"
+    },
+    {
+      "path": "software/dermademo/device/imaging.py",
+      "sha256": "d315d80a32b491dc1d76fc137e3f04c5e547ede0b76af0f757a712e7341124d9"
+    },
+    {
+      "path": "software/dermademo/device/lab.py",
+      "sha256": "05d4ccbe77cf223024f4f2ef521a910cb14c88324b36d9bbe65de095bbc7a311"
+    },
+    {
+      "path": "software/dermademo/device/rgb_contracts.py",
+      "sha256": "700173c3be2a9b3dfe36285b32409751e9b0f49e4a0215dfb5cd270aabe734e5"
+    },
+    {
+      "path": "software/dermademo/device/rgb_protocol.py",
+      "sha256": "50b0fed38c81e7c2d4b603fa6299f4eae905afc9adbd06e6d732e971c50087de"
+    },
+    {
+      "path": "software/dermademo/device/rgb_storage.py",
+      "sha256": "beb85d78b0508ea2211803553cb65bddf6102d72076e0c780a32b587f07e3ce1"
+    },
+    {
+      "path": "software/dermademo/device/rgb_udp.py",
+      "sha256": "27d0e7873fd80529a6af24c3bcdb227e0d55f27e20d60030bba1e8f89f8509db"
+    },
+    {
+      "path": "software/dermademo/device/transport.py",
+      "sha256": "340462d38f8e3ea6d415e51a63befc6af0c404eb90715535cd5cf2d96e225809"
+    },
+    {
+      "path": "software/dermademo/device/__init__.py",
+      "sha256": "c22f3c1d7e9694244ca757da50c5b93948b579128c0bf0315eaf3655a1f20a02"
+    },
+    {
+      "path": "software/dermademo/device/__main__.py",
+      "sha256": "232bbcbeb4a6abe2b818589d0138113d30df31a4ebee372e15a084ffcd2905ee"
+    },
+    {
+      "path": "software/dermademo/_fluent/fluent.qss.in",
+      "sha256": "4c26ada6d2c03d9de5a320f55efe14a23f6375fa8b76c96860b1aa38d98ce4df"
+    },
+    {
+      "path": "software/dermademo/_fluent/LICENSE",
+      "sha256": "012d423426e9dd2acc762664294ab07e8a69bab29107f203021a3f1110e55124"
+    },
+    {
+      "path": "software/dermademo/_fluent/NOTICE.md",
+      "sha256": "b4af9a21f88e14536af7d16f9aaabfbb917f7d316920b43e9ff536d6dc7e808c"
+    },
+    {
+      "path": "software/dermademo/_fluent/README.md",
+      "sha256": "de4a86b8ee140b915128e87fc64fc4518be3953e60d6e41828dbeb5c41da4d77"
+    },
+    {
+      "path": "software/dermademo/_fluent/style.py",
+      "sha256": "3561e0711880d48368d55a046ae96eb984377d5a3b50d9df8df7444ca6fd068d"
+    },
+    {
+      "path": "software/dermademo/_fluent/theme.py",
+      "sha256": "cb6bcc5b1554749d27f5c86335e7a596e57c9c6ddd0525e06ac2df08232a4490"
+    },
+    {
+      "path": "software/dermademo/_fluent/tokens.py",
+      "sha256": "bffecbcabbc87ff0f4d093159907e51480ea5a41ac350d51a6361540acad00a8"
+    },
+    {
+      "path": "software/dermademo/_fluent/__init__.py",
+      "sha256": "5225b53aa8e415a83030d844454e7d4ee6154addce7688c004d6a93b86c5bc57"
+    },
+    {
+      "path": "software/dermademo/_fluent/icons/chevron-down.svg",
+      "sha256": "e7ebdb8bb903ccf94eb07475a08f73c2b0a99e1f99e75a6c38282d7bff23b4c8"
+    },
+    {
+      "path": "software/dermademo/_fluent/icons/chevron-up.svg",
+      "sha256": "f6d279a674917fef567a416f64c7fc03015333286700791bcee5afb73e0d2886"
+    },
+    {
+      "path": "software/dermademo/_fluent/resources/fluent2-official-web-theme-tokens.json",
+      "sha256": "97d7fbbd7926afbadb1b9b344579d1811c137b0f79ff2285ec482a79f4466932"
+    },
+    {
+      "path": "software/dermademo/_fluent/resources/qt-token-map.json",
+      "sha256": "cb377c92b90f765f3d8f0bd6fc4dc3e86919caa46e2408f04f0d9acbb5d6befc"
+    },
+    {
+      "path": "software/dermademo/_fluent/resources/shell-token-map.json",
+      "sha256": "a8885c655a4405fa577b4506abf038031de730cc29a49c647e5f20824725c1ce"
+    },
+    {
+      "path": "software/dermademo/_fluent/resources/source-manifest.json",
+      "sha256": "c05d58c75e12be6f183c078debd7c221817e6f6c2db899d40cf4749818d1fc3a"
+    },
+    {
+      "path": "software/tests/conftest.py",
+      "sha256": "db96cb0e70e66611961d7c09d71a1559e07304278f8fb2064e39daa728911d1f"
+    },
+    {
+      "path": "software/tests/formal_mask_peer.py",
+      "sha256": "4f0d0f5d09b60bc7c48051e32a9f1cc40f417714ede0c4bf120f100ea4977682"
+    },
+    {
+      "path": "software/tests/rgb_udp_peer.py",
+      "sha256": "57a5517b6efcef9040bc8fb72fd50f2f1a173f543e273bb3fd0c9c9cb12c2177"
+    },
+    {
+      "path": "software/tests/roi_test_support.py",
+      "sha256": "c1c668337bc9d10c184f81a9484113ddb43da191d590c9443868d4088f290a54"
+    },
+    {
+      "path": "software/tests/teaching_fixtures.py",
+      "sha256": "e1c057722e686f10a6aa143d3f4c27cfac2afd290b4f209c24627de7d49d06a8"
+    },
+    {
+      "path": "software/tests/test_acceptance.py",
+      "sha256": "106f6484a0a07532a96a56d00ca135b59dd0cb925444aa39b551fc5c4548f014"
+    },
+    {
+      "path": "software/tests/test_ai.py",
+      "sha256": "fa955e12a4be42a3937e7880250c8a8c4030c6242a074f38099117c3c7797ee5"
+    },
+    {
+      "path": "software/tests/test_ai_draft_recovery.py",
+      "sha256": "cda40d5003e43c27de6e2da7bf8b133d7fff62a3ecf7a6f36bfd29ca92185010"
+    },
+    {
+      "path": "software/tests/test_ai_source_review.py",
+      "sha256": "08b1bbaa632902480bb2721ee84359cd4ad4eaf591058039a97468bd366f320e"
+    },
+    {
+      "path": "software/tests/test_ai_transport.py",
+      "sha256": "0e9d5c6453dbf3aedbdb53f62b93f083cfdf9e34ab999b351081d87ab3fdb938"
+    },
+    {
+      "path": "software/tests/test_batch.py",
+      "sha256": "a617978b485a2ee76c4e0ab2d50eb2fe2d86cbce8fa61217cc61b435a5cdb8b0"
+    },
+    {
+      "path": "software/tests/test_classification_v2.py",
+      "sha256": "e1af2fa1bb2d922b18c9f8c36833d48b5cf41742d3aa725498e3d5e1c239d246"
+    },
+    {
+      "path": "software/tests/test_comparison.py",
+      "sha256": "eb49b47eec4066ff0fd2c6ada04b78a83063b981676d788252bb4d506aaa22b4"
+    },
+    {
+      "path": "software/tests/test_cpu_baseline.py",
+      "sha256": "9c9d8e7940cda0524b95c91b3354bd86aa2742b81faf92fd818ba41120ceb5a2"
+    },
+    {
+      "path": "software/tests/test_cpu_gui.py",
+      "sha256": "6969579c8a1c5bdd72a2488449e024d3bc965e9fe1959c8f287ec31e80b6dc8a"
+    },
+    {
+      "path": "software/tests/test_delivery_ui.py",
+      "sha256": "d8303718e766b2f4bb98cab955476078a13208bfb0438319849f5698d6b22d85"
+    },
+    {
+      "path": "software/tests/test_demo100_reference.py",
+      "sha256": "c11a12a4d51318f0877ff7dff3c0558939a7ff2d3f3548a55deff530049dd923"
+    },
+    {
+      "path": "software/tests/test_device_codec.py",
+      "sha256": "a30fc8ef73964af8017b4105d774f78b168dacd17b94df1faadc8ec2f3a4d1f4"
+    },
+    {
+      "path": "software/tests/test_device_gui.py",
+      "sha256": "eec6d4734eadcb4c98fab65a1fb6bba4ffff4ae95af56ef7c262d587bd82b73f"
+    },
+    {
+      "path": "software/tests/test_device_transport.py",
+      "sha256": "5b3c764bfd5497e99b40813464f705060940dbd51fef746f2d2750184f7743c7"
+    },
+    {
+      "path": "software/tests/test_diagnostic_bundle.py",
+      "sha256": "f67a8eb304793307f0bcced4150415af2479f36690d0e7c5e27014ba82a6558d"
+    },
+    {
+      "path": "software/tests/test_diagnostic_logging.py",
+      "sha256": "4cd86534adf417d11c01d906cf7c7cbe9ce6c217371e5a44ab242ab2b5738512"
+    },
+    {
+      "path": "software/tests/test_flash_pdf.py",
+      "sha256": "4ab5cf3171305d8dac56db9945e274f14e8e2e2aa19aae175eafe5f225f1c594"
+    },
+    {
+      "path": "software/tests/test_formal_full_image.py",
+      "sha256": "e729981f2966906c829e32632469d0f12727bd4e4c5ee2d27d50be64623e2eec"
+    },
+    {
+      "path": "software/tests/test_formal_full_image_gui.py",
+      "sha256": "4470044d808bb14d360a4c46aab4a33f73c25e3aa26f81de64539c259f379c11"
+    },
+    {
+      "path": "software/tests/test_formal_mask.py",
+      "sha256": "afc3fc2cb21d104f81f1e31c3429ba8a1bde06f5ffc256b52e39629f3e8ba86c"
+    },
+    {
+      "path": "software/tests/test_formal_mask_gui.py",
+      "sha256": "d5fb1db601da34796da9ca917d6e4b192b141b22d73c41f502f887387c91bfa9"
+    },
+    {
+      "path": "software/tests/test_formal_persistence.py",
+      "sha256": "2a23cf5f60b7e86d0621b58d641622ccb4858da3c4ae177a12f053edbf856dd5"
+    },
+    {
+      "path": "software/tests/test_formal_queue.py",
+      "sha256": "8e1d5727a030f832e0a7299fd2e987d44a34338ebb12dc00a5aa48b723e06240"
+    },
+    {
+      "path": "software/tests/test_generic_record_gui.py",
+      "sha256": "6edf4c1a6dd6a1e5c52314f6f813aa3e57f5a7ebc6fd79b9befb1e8c90c3ba32"
+    },
+    {
+      "path": "software/tests/test_gui.py",
+      "sha256": "8514075a856be1b9690e39141c547ff4026faa8f045f6dbd7ed37c32627db99b"
+    },
+    {
+      "path": "software/tests/test_hardware_declaration.py",
+      "sha256": "6068391d64144c266136ffaf3ca8f20e8f614d019bee33fdd637d7017b3e4cf5"
+    },
+    {
+      "path": "software/tests/test_hardware_frame_context.py",
+      "sha256": "927cbaced1287525e1f5b29d7714b5cca7558128725e8f3eac0aae594af58e24"
+    },
+    {
+      "path": "software/tests/test_hardware_gui.py",
+      "sha256": "44fce514e6b1bd74dbbb0d5c074cccce3505c08e6fdb5c1551178756187f2a7b"
+    },
+    {
+      "path": "software/tests/test_hardware_lab.py",
+      "sha256": "7ba9a45ccf976c4eafc59ce070fe0c72a19c995a3a10be3ab80e71f4d34522bd"
+    },
+    {
+      "path": "software/tests/test_hardware_lab_gui.py",
+      "sha256": "90e61e5cb0d0e1da1cef87ea2d12eef62054860314346fa340c49503b45bd888"
+    },
+    {
+      "path": "software/tests/test_image_viewer.py",
+      "sha256": "ef540b94312a04192e756fa757fa0ae7220f15b861070913adcf359972b11b08"
+    },
+    {
+      "path": "software/tests/test_incremental_update.py",
+      "sha256": "c8719b168e3facd532fe52f7312abb070929f05b26e77bcdde82f857529df770"
+    },
+    {
+      "path": "software/tests/test_isic2016.py",
+      "sha256": "53089e90bbacc12509a4ae4fd5b64b7d7426c812f812618f9c1970f66f52d7b4"
+    },
+    {
+      "path": "software/tests/test_isic_gui.py",
+      "sha256": "e51b5d249c80e5b4670bbe8edf05c0c34131c22fcf2b0a131cded603c9159d15"
+    },
+    {
+      "path": "software/tests/test_isic_launcher.py",
+      "sha256": "d57121daef65850e820f651d18a6ab66db5b3bc250b2fdb038e6c919d586ef31"
+    },
+    {
+      "path": "software/tests/test_launcher.py",
+      "sha256": "54d1539ce2add5ab7d9a05307dd8ebc8991bed690dba43c17ded274c610b8faf"
+    },
+    {
+      "path": "software/tests/test_pdf_tables.py",
+      "sha256": "22aa6de11f76e02da3e77d9d2aab94d22ac7f9854021bfcfdbb28b16f268e0dc"
+    },
+    {
+      "path": "software/tests/test_performance_gui.py",
+      "sha256": "92ffc42be72da35397e50e9992f5ca17641631cdab78ffb367012ea91e5c4b35"
+    },
+    {
+      "path": "software/tests/test_performance_round1.py",
+      "sha256": "23bc6a3256f1c94f03a0e13ab1911e46d6fc71df966a543d603e482f60c11ed3"
+    },
+    {
+      "path": "software/tests/test_preferences.py",
+      "sha256": "5cc5140b8fc809e1788b2455733a89c42694eaedf1e0535287f36fce8fbcfd26"
+    },
+    {
+      "path": "software/tests/test_processing.py",
+      "sha256": "56925afff267b3f69a5726cd47e26535321891566ce450493152370e07275851"
+    },
+    {
+      "path": "software/tests/test_queue_reference_import.py",
+      "sha256": "65069238d94c873da410f18d25be596652cc7d0cc99008ab01866254af9292ad"
+    },
+    {
+      "path": "software/tests/test_records.py",
+      "sha256": "b6f4642b081538ede10c224a1922acf52dbe84ec5aaaaa3cf852b629e367328e"
+    },
+    {
+      "path": "software/tests/test_record_gui.py",
+      "sha256": "3f25584b75f6c6b1174e963a18a8674848f62977b8b326e96bbf64597f804283"
+    },
+    {
+      "path": "software/tests/test_registry.py",
+      "sha256": "2bb7823c6a39161cecf0bb6aefd341810eab52d285d55716679f9f888ddd2a8d"
+    },
+    {
+      "path": "software/tests/test_release_entries.py",
+      "sha256": "f9ddb7c7f67b2ac35cffc5dac66cabbe47f9476dff2c8e34ce0afd4816403b28"
+    },
+    {
+      "path": "software/tests/test_rendering.py",
+      "sha256": "e4f09f26cf37c101ce2debd5c9a2471375efffe7004ac5d6302b185d1c57ba2f"
+    },
+    {
+      "path": "software/tests/test_review.py",
+      "sha256": "35527d93649e7ff82f84707a836c5ee5dcedfab741526fb4f0d1628c6bc4ab34"
+    },
+    {
+      "path": "software/tests/test_rgb_acceptance_evidence.py",
+      "sha256": "8d94e97f0c0bf399da2e708a460613444a4a7d0ce92364619c39e9d36d600e2c"
+    },
+    {
+      "path": "software/tests/test_rgb_device_gui.py",
+      "sha256": "158f1493e043f2460a21c9f5cd4a0f35283466283d0ecb7926a3ed1a8f81a9bc"
+    },
+    {
+      "path": "software/tests/test_rgb_udp.py",
+      "sha256": "3895dc15376dd696b5cd4fc614ff29f16773874c9cfce64e037b5a1a60121d24"
+    },
+    {
+      "path": "software/tests/test_roi.py",
+      "sha256": "c3564fc49abe14c99d10c14dccb40440ec9dca1554352a28a95075084d392d87"
+    },
+    {
+      "path": "software/tests/test_roi_confirmed.py",
+      "sha256": "d9d9159be8ddc22336b60c6f4053bd8740f11b2fe5badcccbe0be2c778f1f6f6"
+    },
+    {
+      "path": "software/tests/test_roi_edge.py",
+      "sha256": "946571b756b2421ef980b38eb5dbb0b40b05afd7c9b7b86b1c08f8703bed0b14"
+    },
+    {
+      "path": "software/tests/test_roi_edge_gui.py",
+      "sha256": "fcbe9fa47d0586df74e6b88faa278e272d4ee19338587d961cb148e53f67b942"
+    },
+    {
+      "path": "software/tests/test_roi_gui.py",
+      "sha256": "1be07b7b8bc9f5acc45b1d5d52cc052e741a9766803a3edf86c8267a6d8f3957"
+    },
+    {
+      "path": "software/tests/test_runtime_paths.py",
+      "sha256": "388652fb41793497581a681e542b75c911c56337e6b12671ca50bebe11846cb8"
+    },
+    {
+      "path": "software/tests/test_storage.py",
+      "sha256": "72e63f17f96c25f3b2302fe2e1b0b3e47cb31cfda907255dc91d86bf5a81ec07"
+    },
+    {
+      "path": "software/tests/test_submission.py",
+      "sha256": "d279a4e12e22751e39f34beb0c5c2bdea42b334e2f12174a9feca6f7153ea807"
+    },
+    {
+      "path": "software/tests/test_teaching_gui.py",
+      "sha256": "b9226268889b0ee5129081588cb020094d248912672ab3626412b08c62478662"
+    },
+    {
+      "path": "software/tests/test_teaching_validation.py",
+      "sha256": "bc616aa74ca84d816becbb8031e77e84630c7744bacdb187a8b391d383065722"
+    },
+    {
+      "path": "software/tests/test_theme.py",
+      "sha256": "1c83ccb17f4c428c0df593f4c0246a9bfd6550f67cc73fc1141c600c2dff1e33"
+    },
+    {
+      "path": "software/tests/test_timing_view.py",
+      "sha256": "95fb56845e7f712cf753740630c0199575ed7d139ff639848199eb7dc7adfa98"
+    },
+    {
+      "path": "software/tests/test_unified_iteration.py",
+      "sha256": "b4174fae7fd40eb26a9a0ded3db690cab40b17b8790b489e42d3c6a5f1c273b7"
+    },
+    {
+      "path": "software/tests/test_v070_acceptance.py",
+      "sha256": "a729c4bde29dabf916792a039f552a39b46b7c725ffa63754184a1b2d20e5f02"
+    },
+    {
+      "path": "software/tests/tls_peer.py",
+      "sha256": "3505a58575a1c8968fe6026ecbe5c22c826618790fdc625c4d8108985314c759"
+    },
+    {
+      "path": "software/requirements-build.lock.txt",
+      "sha256": "d8ba286f02050a3c56b31384afc8db1a41c2d01ab55b17a69ea3fbdceab70f59"
+    },
+    {
+      "path": "software/requirements-cpu.lock.txt",
+      "sha256": "4a0ba059ded42a0549ab2aa00f16704da772367f0efdabec9fff9b47fa5289df"
+    },
+    {
+      "path": "software/requirements-dev.txt",
+      "sha256": "8636f9ab1a075be9f3039e2a6471837259c4f36b625bcaf7a3d9a1edd2419c6d"
+    },
+    {
+      "path": "software/requirements-lock.txt",
+      "sha256": "da1f48760df0b2e26088e080df0cee850c904dd17cd14277b34590a3bcc2b6e2"
+    },
+    {
+      "path": "software/requirements-runtime.lock.txt",
+      "sha256": "40503e4aa35714d483f4d4c08d80f757ec3043b0a4342ab2e915b4de7414edc5"
+    },
+    {
+      "path": "software/requirements.txt",
+      "sha256": "dcd71d558bf555f13cf16b0ddfe21c7825814a34248b20dadfb0c582159784a4"
+    },
+    {
+      "path": "software/pytest.ini",
+      "sha256": "0e7a41d287b41618b047da8e7d86cf9461edf0868eebbaa711a79590d161d30c"
+    },
+    {
+      "path": "software/integrations/classifier_v2/CPU_COMMANDS.txt",
+      "sha256": "22b604a00d5a13fb1c139bc6aab0065b5f7774509ef64cb50fd19fa274b23068"
+    },
+    {
+      "path": "software/integrations/classifier_v2/DATA_SOURCE_AND_LICENSE.md",
+      "sha256": "5bcdbfb403b15adec10530085a434b2f5a203c154df9f8572ad1c22b356bf75e"
+    },
+    {
+      "path": "software/integrations/classifier_v2/HANDOFF_MESSAGE.txt",
+      "sha256": "9f53e24d4efc58c6fa2f7000b52533dcfde5e8cd8838689a0d383d9046663116"
+    },
+    {
+      "path": "software/integrations/classifier_v2/requirements-cpu-non-torch.txt",
+      "sha256": "54643a9142ab8064fbcd2df1d606004dd8bc56f67e9021f64cc7dd9f3a4205e8"
+    },
+    {
+      "path": "software/integrations/classifier_v2/SHA256SUMS.txt",
+      "sha256": "31c0196120a6b0f3976d6f9fc67c0b69c320d9414134cc9046142c8ce92d7093"
+    },
+    {
+      "path": "software/integrations/classifier_v2/software/classification_core.py",
+      "sha256": "09a1d7f21e91eaeab7ab9aa68ed39a5dab5720e718408b6d81f0a9945182d8e4"
+    },
+    {
+      "path": "software/integrations/cpu_fp32_r1/HANDOFF_MESSAGE.txt",
+      "sha256": "94796f6dc818255aecfa0a7612da1a3ec8eb91cc3abc53089713a3c6e7979423"
+    },
+    {
+      "path": "software/integrations/cpu_fp32_r1/requirements-cpu-non-torch.txt",
+      "sha256": "1ab7044555c436de793d55c25223540153140c7bb57788838d7e50da7274ce87"
+    },
+    {
+      "path": "software/integrations/cpu_fp32_r1/SHA256SUMS.txt",
+      "sha256": "611e8574262c06cf2ce2e19bec3c1af741808a305f23cf9e4cd6d4291c2ad9cf"
+    },
+    {
+      "path": "software/integrations/cpu_fp32_r1/provenance/original_fold_loader_snapshot.py",
+      "sha256": "8b7fb650ddacc0b39596ab84c784e04da8285c29644f5c94069162897c63a2e2"
+    },
+    {
+      "path": "software/integrations/cpu_fp32_r1/software/cpu_fp32.py",
+      "sha256": "206da0fd142afcd38b43ad56b43b93b1f99705098d57c8dfaf2566793c0f04ca"
+    },
+    {
+      "path": "software/integrations/cpu_fp32_r1/software/folded_model_loader.py",
+      "sha256": "18776f232fd4bd1d314c06440cc0d9131dd801020a7bae6be470cfdcaf1665b9"
+    },
+    {
+      "path": "software/integrations/cpu_fp32_r1/software/mobilenetv2_light_unet.py",
+      "sha256": "45de980ff5890ff999318948f8a6a6b1fbcf57be246bad7688c9abaf918c4514"
+    },
+    {
+      "path": "software/integrations/cpu_fp32_r1/software/self_check.py",
+      "sha256": "d6fba01ef739c768c80d89ea39ebe20b0b03667c9fe99ba92d319c59974ce8ce"
+    },
+    {
+      "path": "software/integrations/full_image_20261025/HANDOFF_MESSAGE.txt",
+      "sha256": "4f0ed1ff498ed23535b21e1fa0ad80bc4659a53adf6ef9e436c2cf17e0005f57"
+    },
+    {
+      "path": "software/integrations/full_image_20261025/SHA256SUMS.txt",
+      "sha256": "00934b3c4f40936b61b29076d7395694e20f8b7d81faa68a36828b478072685f"
+    },
+    {
+      "path": "software/integrations/full_image_20261025/software/check_image_to_rgb888.py",
+      "sha256": "0914a4d18c2d6cb4824b62f590a2cda3a26fc6b4f6df324d7e9e7dd95b13b9e8"
+    },
+    {
+      "path": "software/integrations/full_image_20261025/software/image_to_rgb888.py",
+      "sha256": "ef691ac3be378acd97c76afd78c260e4dca690cb0ea4dba9e49cf0edd5d212ad"
+    },
+    {
+      "path": "software/integrations/full_image_20261025/software/official_reference_loader.py",
+      "sha256": "2abd72217ee7ef2e0239c0858039deb1aed90e5a5bea42d8b2d32b9af75f1936"
+    },
+    {
+      "path": "software/integrations/full_image_20261025/software/replay_three.py",
+      "sha256": "176d21494b89156eba9c3b9f49e714e9d2be98320d74dc4eea6bf00560263e55"
+    },
+    {
+      "path": "software/integrations/full_image_20261025/source_snapshots/build_validation20_samples.py",
+      "sha256": "e32d2d12db2f50b7589bcbebbdb7836b79a84688ca2b1bd730bcfbfb1930f836"
+    },
+    {
+      "path": "software/integrations/full_image_20261025/source_snapshots/dataset_loader.py",
+      "sha256": "fb9a0665b527f24bfc20ae1a68b32ecce46bf5eff39ba1485185bce98ffb307f"
+    },
+    {
+      "path": "software/integrations/full_image_20261025/source_snapshots/prepare_dataset.py",
+      "sha256": "a871874d236fb830c0a0c0a8eae6129037b448b8f57092a3b439a5d4bda432f4"
+    },
+    {
+      "path": "software/integrations/roi_int8_r1/HANDOFF_MESSAGE.txt",
+      "sha256": "ea326992d51133abd53595b92667f7094d9847b207d857ceabe0539b5f985afb"
+    },
+    {
+      "path": "software/integrations/roi_int8_r1/requirements-preprocessing.txt",
+      "sha256": "1ab7044555c436de793d55c25223540153140c7bb57788838d7e50da7274ce87"
+    },
+    {
+      "path": "software/integrations/roi_int8_r1/SHA256SUMS.txt",
+      "sha256": "60da046bc10e3fb55d6f610eab665fd7ee75272223483c1d25f5c2fa7cb80728"
+    },
+    {
+      "path": "software/integrations/roi_int8_r1/software/check_roi_to_rgb888.py",
+      "sha256": "e4160f0924d01030dd466da03751155879b354eca2beda3182595d7ce9fca49d"
+    },
+    {
+      "path": "software/integrations/roi_int8_r1/software/image_to_rgb888.py",
+      "sha256": "4d8301801255990239152ba7308d6e7d6d2355d9ee8e30c574b11f8987c27ea5"
+    },
+    {
+      "path": "software/integrations/roi_int8_r1/software/official_reference_loader.py",
+      "sha256": "2abd72217ee7ef2e0239c0858039deb1aed90e5a5bea42d8b2d32b9af75f1936"
+    },
+    {
+      "path": "software/integrations/roi_int8_r1/software/replay_three.py",
+      "sha256": "e732a36153e4960070bb231a14d2b2b9ce6ab52a417f408ff5b3596bb23f10d5"
+    },
+    {
+      "path": "software/integrations/roi_int8_r1/software/roi_to_rgb888.py",
+      "sha256": "c5b0033b2b1b378f716de41daf80d9c42963a3a2b3ec1148c6eaa921532cf1a6"
+    },
+    {
+      "path": "software/integrations/roi_int8_r1/source_snapshots/frozen_image_to_rgb888.py",
+      "sha256": "ef691ac3be378acd97c76afd78c260e4dca690cb0ea4dba9e49cf0edd5d212ad"
+    },
+    {
+      "path": "software/integrations/roi_edge_r1/HANDOFF_MESSAGE.txt",
+      "sha256": "d1a54b3abf438b42a2db052621063c93757fa4b467d4b217556ec6247dd6d301"
+    },
+    {
+      "path": "software/integrations/roi_edge_r1/requirements.txt",
+      "sha256": "5e6d55d17a3de59f3187483e217af4f7968325ffc490ab74ad6f806b0c314d6d"
+    },
+    {
+      "path": "software/integrations/roi_edge_r1/SHA256SUMS.txt",
+      "sha256": "8e2f71fd7bd77350819b50740c72700b104ea0e39c2819760ef287520046f86a"
+    },
+    {
+      "path": "software/integrations/roi_edge_r1/software/roi_edge_contact.py",
+      "sha256": "6955f8c293e88ee682aafa95379640671a962e9f37a0e95be5f52146ef6509b5"
+    },
+    {
+      "path": "software/integrations/roi_edge_r1/software/test_roi_edge_contact.py",
+      "sha256": "f05a2c10365646ab088eca459e21df7fcb72b0b3d7c31cfe42c068bb041754d0"
+    },
+    {
+      "path": "software/integrations/ai_draft_r2/dermademo/ai_content_policy.py",
+      "sha256": "dd7a44d0fcbc345a8672af79d674f68295cd414705a0ac5577a13d908db3e9a7"
+    },
+    {
+      "path": "software/integrations/ai_draft_r2/dermademo/ai_protocol.py",
+      "sha256": "0bb145a8b82bd8104e5b865721a78195136644ba8f7358a2345015f5d473f5e2"
+    }
+  ]
+}

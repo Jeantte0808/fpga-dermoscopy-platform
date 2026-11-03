@@ -1,0 +1,14 @@
+# Verified Windows / Python 3.12 environment, including test dependencies.
+colorama==0.4.6
+iniconfig==2.3.0
+numpy==2.5.3
+opencv-python-headless==4.14.0.94
+packaging==26.3
+pillow==12.3.0
+pluggy==1.6.0
+pygments==2.21.0
+pyside6==6.11.2
+pyside6-addons==6.11.2
+pyside6-essentials==6.11.2
+pytest==9.1.1
+shiboken6==6.11.2

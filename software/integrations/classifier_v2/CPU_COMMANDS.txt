@@ -1,0 +1,1 @@
+python -B software/classification_core.py --input "samples/01_ISIC_0025097/ISIC_0025097.jpg" --output outputs/result.json --threads 4 --interop-threads 1
